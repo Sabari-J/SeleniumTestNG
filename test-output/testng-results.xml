@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-25T16:49:43 IST" name="Default suite" finished-at="2023-07-25T16:49:51 IST" duration-ms="7500">
+    <groups>
+    </groups>
+    <test started-at="2023-07-25T16:49:43 IST" name="Default test" finished-at="2023-07-25T16:49:51 IST" duration-ms="7500">
+      <class name="PageObjClasses.frames">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.frames@4f2b503c]" started-at="2023-07-25T16:49:43 IST" name="getDriver" finished-at="2023-07-25T16:49:50 IST" duration-ms="6981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="clickOnFrames()[pri:0, instance:PageObjClasses.frames@4f2b503c]" started-at="2023-07-25T16:49:50 IST" name="clickOnFrames" finished-at="2023-07-25T16:49:51 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnFrames -->
+        <test-method signature="frame1()[pri:1, instance:PageObjClasses.frames@4f2b503c]" started-at="2023-07-25T16:49:51 IST" name="frame1" finished-at="2023-07-25T16:49:51 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame1 -->
+        <test-method signature="frame2()[pri:2, instance:PageObjClasses.frames@4f2b503c]" started-at="2023-07-25T16:49:51 IST" name="frame2" finished-at="2023-07-25T16:49:51 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame2 -->
+      </class> <!-- PageObjClasses.frames -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
