@@ -13,12 +13,12 @@ import org.testng.annotations.Test;
 import Base.base;
 
 public class BrowserWindows extends base {
-	
-	
+
 	@Test(priority = 0)
 	public void clickOnAlertFrameWindowsTab() {
 
-		WebElement alertFrameWindowOption = driver.findElement(By.xpath("//*[contains(text(), 'Alerts, Frame & Windows')]"));
+		WebElement alertFrameWindowOption = driver
+				.findElement(By.xpath("//*[contains(text(), 'Alerts, Frame & Windows')]"));
 		scrollToElement(alertFrameWindowOption);
 		alertFrameWindowOption.click();
 		System.out.println("Clicked on Alerts, Frame & Windows");
@@ -64,8 +64,9 @@ public class BrowserWindows extends base {
 
 		String titlebyJavascript = jse.executeScript("return document.title;").toString();
 		System.out.println("Title of webpage by Javascript :" + titlebyJavascript);
-		
+
 		driver.close();
+		driver.switchTo().window(motherWindow);
 
 	}
 
@@ -113,7 +114,8 @@ public class BrowserWindows extends base {
 			}
 		}
 
-		// USED jsoup - jsoup is an open-source Java library designed to parse, extract and manipulate data stored in HTML documents
+		// USED jsoup - jsoup is an open-source Java library designed to parse, extract
+		// and manipulate data stored in HTML documents
 
 		String htmlContent = "<html><head></head><body>Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.</body></html>";
 		Document doc = Jsoup.parse(htmlContent);
@@ -126,5 +128,5 @@ public class BrowserWindows extends base {
 		Thread.sleep(3000);
 		driver.quit();
 	}
-	
+
 }

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sabareesan.j\AppData\Local\Temp\testng-eclipse--278190801\testng-customsuite.xml</span>
+                    <span>C:\Users\sabareesan.j\AppData\Local\Temp\testng-eclipse-2131975004\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,17 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.frames" class="method navigator-link" hash-for-method="clickOnFrames">clickOnFrames</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.NestedFrames" class="method navigator-link" hash-for-method="OuterFramevalidation">OuterFramevalidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.frames" class="method navigator-link" hash-for-method="frame1">frame1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.NestedFrames" class="method navigator-link" hash-for-method="clickOnNestedFrame">clickOnNestedFrame</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.frames" class="method navigator-link" hash-for-method="frame2">frame2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="PageObjClasses.NestedFrames" class="method navigator-link" hash-for-method="innerFrameValidation">innerFrameValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,28 +132,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">PageObjClasses.frames</span>
+              <span class="class-name">PageObjClasses.NestedFrames</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnFrames">
-                  </a> <!-- clickOnFrames -->
-                  <span class="method-name">clickOnFrames</span>
+                  <a name="OuterFramevalidation">
+                  </a> <!-- OuterFramevalidation -->
+                  <span class="method-name">OuterFramevalidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="frame1">
-                  </a> <!-- frame1 -->
-                  <span class="method-name">frame1</span>
+                  <a name="clickOnNestedFrame">
+                  </a> <!-- clickOnNestedFrame -->
+                  <span class="method-name">clickOnNestedFrame</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="frame2">
-                  </a> <!-- frame2 -->
-                  <span class="method-name">frame2</span>
+                  <a name="innerFrameValidation">
+                  </a> <!-- innerFrameValidation -->
+                  <span class="method-name">innerFrameValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sabareesan.j\AppData\Local\Temp\testng-eclipse--278190801\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sabareesan.j\AppData\Local\Temp\testng-eclipse-2131975004\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -170,7 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;PageObjClasses.frames&quot;/&gt;
+      &lt;class name=&quot;PageObjClasses.NestedFrames&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -212,22 +212,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'frame1')
-data.setCell(0, 2, 'PageObjClasses.frames')
-data.setCell(0, 3, 191);
+data.setCell(0, 1, 'OuterFramevalidation')
+data.setCell(0, 2, 'PageObjClasses.NestedFrames')
+data.setCell(0, 3, 216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'frame2')
-data.setCell(1, 2, 'PageObjClasses.frames')
-data.setCell(1, 3, 149);
+data.setCell(1, 1, 'clickOnNestedFrame')
+data.setCell(1, 2, 'PageObjClasses.NestedFrames')
+data.setCell(1, 3, 137);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickOnFrames')
-data.setCell(2, 2, 'PageObjClasses.frames')
-data.setCell(2, 3, 147);
+data.setCell(2, 1, 'innerFrameValidation')
+data.setCell(2, 2, 'PageObjClasses.NestedFrames')
+data.setCell(2, 3, 47);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 487 ms</span>
+              <span class="suite-total-time">Total running time: 400 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,22 +253,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">PageObjClasses.frames</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">PageObjClasses.NestedFrames</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">clickOnFrames</span>
-                <span class="method-start">6999 ms</span>
+                <span class="method-name">clickOnNestedFrame</span>
+                <span class="method-start">10290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">frame1</span>
-                <span class="method-start">7152 ms</span>
+                <span class="method-name">OuterFramevalidation</span>
+                <span class="method-start">10433 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">frame2</span>
-                <span class="method-start">7344 ms</span>
+                <span class="method-name">innerFrameValidation</span>
+                <span class="method-start">10650 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

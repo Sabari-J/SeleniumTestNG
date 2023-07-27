@@ -1,5 +1,7 @@
 package PageObjClasses;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -24,23 +26,33 @@ public class frames extends base {
 	@Test(priority = 1)
 	public void frame1() {
 
-		int countOfFrames = driver.findElements(By.tagName("iframe")).size();
-		System.out.println("No of frames in this page: " + countOfFrames);
+		/* int countOfFrames = driver.findElements(By.tagName("iframe")).getSize() 
+		 		(OR)
+		 	the below snippet:  */
 
-		driver.switchTo().frame(0);
+		List<WebElement> countOfFrames = driver.findElements(By.tagName("iframe"));
+		int NocountOfFrames = countOfFrames.size();
+
+		System.out.println("No of frames in this page: " + NocountOfFrames);
+
+		WebElement frame1 = driver.findElement(By.xpath("//iframe[@id='frame1']"));
+		driver.switchTo().frame(frame1);
 
 		String parentFrame = driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText();
-		System.out.println("Content inside the frame: \n" + parentFrame);
+		System.out.println("Content inside the frame1: \n" + parentFrame);
 
 		driver.switchTo().defaultContent();
 	}
 
 	@Test(priority = 2)
 	public void frame2() {
-		driver.switchTo().frame(1);
+		
+		WebElement frame2 = driver.findElement(By.xpath("//iframe[@id='frame2']"));
+		driver.switchTo().frame(frame2);
 
 		String childframe = driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText();
-		System.out.println("Content inside the frame: " + childframe);
+		System.out.println("Content inside the frame2: " + childframe);
+
 	}
 
 }

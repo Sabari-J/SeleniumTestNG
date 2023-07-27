@@ -5,6 +5,7 @@
     <classes>
       <class name="PageObjClasses.frames">
         <methods>
+          <include name="frame1"/>
           <include name="frame2"/>
           <include name="getDriver"/>
         </methods>
