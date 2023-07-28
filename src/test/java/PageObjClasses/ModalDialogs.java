@@ -11,6 +11,8 @@ public class ModalDialogs extends base {
 
 		WebElement dialogModalOption = driver.findElement(By.xpath(""));
 		dialogModalOption.click();
+		
+		System.out.println("Clicked on ");
 
 	}
 
