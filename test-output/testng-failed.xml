@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.frames">
+      <class name="PageObjClasses.ModalDialogs">
         <methods>
-          <include name="frame1"/>
-          <include name="frame2"/>
+          <include name="clickOnSmallModal"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.frames -->
+      </class> <!-- PageObjClasses.ModalDialogs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
