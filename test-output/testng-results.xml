@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-31T13:56:39 IST" name="Default suite" finished-at="2023-07-31T13:56:55 IST" duration-ms="16461">
+  <suite started-at="2023-07-31T16:51:14 IST" name="Default suite" finished-at="2023-07-31T16:51:32 IST" duration-ms="18148">
     <groups>
     </groups>
-    <test started-at="2023-07-31T13:56:39 IST" name="Default test" finished-at="2023-07-31T13:56:55 IST" duration-ms="16461">
-      <class name="PageObjClasses.ModalDialogs">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.ModalDialogs@4f2b503c]" started-at="2023-07-31T13:56:39 IST" name="getDriver" finished-at="2023-07-31T13:56:49 IST" duration-ms="9499" status="PASS">
+    <test started-at="2023-07-31T16:51:14 IST" name="Default test" finished-at="2023-07-31T16:51:32 IST" duration-ms="18148">
+      <class name="PageObjClasses.AccordianOptions">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:14 IST" name="getDriver" finished-at="2023-07-31T16:51:22 IST" duration-ms="8312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnDialogModalOptions()[pri:0, instance:PageObjClasses.ModalDialogs@4f2b503c]" started-at="2023-07-31T13:56:49 IST" name="clickOnDialogModalOptions" finished-at="2023-07-31T13:56:49 IST" duration-ms="319" status="PASS">
+        <test-method signature="clickOnWidgets()[pri:0, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:22 IST" name="clickOnWidgets" finished-at="2023-07-31T16:51:22 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnDialogModalOptions -->
-        <test-method signature="clickOnSmallModal()[pri:1, instance:PageObjClasses.ModalDialogs@4f2b503c]" started-at="2023-07-31T13:56:49 IST" name="clickOnSmallModal" finished-at="2023-07-31T13:56:52 IST" duration-ms="3288" status="PASS">
+        </test-method> <!-- clickOnWidgets -->
+        <test-method signature="clickOnAccordianOptions()[pri:1, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:22 IST" name="clickOnAccordianOptions" finished-at="2023-07-31T16:51:22 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnSmallModal -->
-        <test-method signature="clickOnLargeModal()[pri:2, instance:PageObjClasses.ModalDialogs@4f2b503c]" started-at="2023-07-31T13:56:52 IST" name="clickOnLargeModal" finished-at="2023-07-31T13:56:55 IST" duration-ms="3323" status="PASS">
+        </test-method> <!-- clickOnAccordianOptions -->
+        <test-method signature="clickOnAccordianOption1()[pri:2, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:22 IST" name="clickOnAccordianOption1" finished-at="2023-07-31T16:51:26 IST" duration-ms="3118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnLargeModal -->
-      </class> <!-- PageObjClasses.ModalDialogs -->
+        </test-method> <!-- clickOnAccordianOption1 -->
+        <test-method signature="clickOnAccordianOption2()[pri:3, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:26 IST" name="clickOnAccordianOption2" finished-at="2023-07-31T16:51:29 IST" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAccordianOption2 -->
+        <test-method signature="clickOnAccordianOption3()[pri:4, instance:PageObjClasses.AccordianOptions@bae7dc0]" started-at="2023-07-31T16:51:29 IST" name="clickOnAccordianOption3" finished-at="2023-07-31T16:51:32 IST" duration-ms="3307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAccordianOption3 -->
+      </class> <!-- PageObjClasses.AccordianOptions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
