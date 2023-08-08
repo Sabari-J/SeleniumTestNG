@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.AutoComplete">
+      <class name="PageObjClasses.DatePicker">
         <methods>
-          <include name="enterTextInMultipleColornames"/>
+          <include name="clickOnDatePicker"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.AutoComplete -->
+      </class> <!-- PageObjClasses.DatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

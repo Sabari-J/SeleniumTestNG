@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-03T18:10:12 IST" name="Default suite" finished-at="2023-08-03T18:10:19 IST" duration-ms="7752">
+  <suite started-at="2023-08-08T16:27:37 IST" name="Default suite" finished-at="2023-08-08T16:27:48 IST" duration-ms="10499">
     <groups>
     </groups>
-    <test started-at="2023-08-03T18:10:12 IST" name="Default test" finished-at="2023-08-03T18:10:19 IST" duration-ms="7752">
-      <class name="PageObjClasses.AutoComplete">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.AutoComplete@6fd83fc1]" started-at="2023-08-03T18:10:12 IST" name="getDriver" finished-at="2023-08-03T18:10:19 IST" duration-ms="7240" status="PASS">
+    <test started-at="2023-08-08T16:27:37 IST" name="Default test" finished-at="2023-08-08T16:27:48 IST" duration-ms="10499">
+      <class name="PageObjClasses.DatePicker">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.DatePicker@52af26ee]" started-at="2023-08-08T16:27:37 IST" name="getDriver" finished-at="2023-08-08T16:27:47 IST" duration-ms="10284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnAutoCompleteTab()[pri:0, instance:PageObjClasses.AutoComplete@6fd83fc1]" started-at="2023-08-03T18:10:19 IST" name="clickOnAutoCompleteTab" finished-at="2023-08-03T18:10:19 IST" duration-ms="154" status="PASS">
+        <test-method signature="clickOnDatePicker()[pri:0, instance:PageObjClasses.DatePicker@52af26ee]" started-at="2023-08-08T16:27:47 IST" name="clickOnDatePicker" finished-at="2023-08-08T16:27:48 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnAutoCompleteTab -->
-        <test-method signature="enterTextInMultipleColornames()[pri:1, instance:PageObjClasses.AutoComplete@6fd83fc1]" started-at="2023-08-03T18:10:19 IST" name="enterTextInMultipleColornames" finished-at="2023-08-03T18:10:19 IST" duration-ms="325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterTextInMultipleColornames -->
-      </class> <!-- PageObjClasses.AutoComplete -->
+        </test-method> <!-- clickOnDatePicker -->
+      </class> <!-- PageObjClasses.DatePicker -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
