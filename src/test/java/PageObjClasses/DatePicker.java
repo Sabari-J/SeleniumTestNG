@@ -36,7 +36,7 @@ public class DatePicker extends base {
 //
 //	}
 	
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void selectDate() {
 		String date = "11/24/1987";
 
@@ -85,6 +85,19 @@ public class DatePicker extends base {
 		
 		Assert.assertEquals(date, FinalDate);
 	}
-	  
+	
+	
+	@Test(priority = 2)
+	public void selectDateAndTime() {
+		
+	WebElement dateAndTime = driver.findElement(By.xpath("input//[@id='dateAndTimePickerInput']"));
+	dateAndTime.click();
+	
+	// Month - xpath 
+	//div[@class = 'react-datepicker__month-option' and .= 'June']
+	
+	// Year - xpath - needs enhancement
+	//div[@class = 'react-datepicker__year-option' and .= '2030']
+	}
 	 
 }
