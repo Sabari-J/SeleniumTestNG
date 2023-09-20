@@ -71,6 +71,7 @@ public class base {
 	public void getDriver() {
 
 		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().clearDriverCache().setup();
 		driver = new ChromeDriver();
 		System.out.println("Browser launched Successfully");
 		driver.get("https://demoqa.com/");

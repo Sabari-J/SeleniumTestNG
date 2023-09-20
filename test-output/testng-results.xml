@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T17:15:13 IST" name="Default suite" finished-at="2023-08-10T17:15:24 IST" duration-ms="10673">
+  <suite started-at="2023-09-20T10:18:02 IST" name="Default suite" finished-at="2023-09-20T10:18:10 IST" duration-ms="8606">
     <groups>
     </groups>
-    <test started-at="2023-08-10T17:15:13 IST" name="Default test" finished-at="2023-08-10T17:15:24 IST" duration-ms="10673">
-      <class name="PageObjClasses.DatePicker">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.DatePicker@6fd83fc1]" started-at="2023-08-10T17:15:13 IST" name="getDriver" finished-at="2023-08-10T17:15:23 IST" duration-ms="10139" status="PASS">
+    <test started-at="2023-09-20T10:18:02 IST" name="Default test" finished-at="2023-09-20T10:18:10 IST" duration-ms="8606">
+      <class name="PageObjClasses.Slider">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Slider@306e95ec]" started-at="2023-09-20T10:18:02 IST" name="getDriver" finished-at="2023-09-20T10:18:10 IST" duration-ms="7783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnDatePicker()[pri:0, instance:PageObjClasses.DatePicker@6fd83fc1]" started-at="2023-08-10T17:15:23 IST" name="clickOnDatePicker" finished-at="2023-08-10T17:15:24 IST" duration-ms="144" status="PASS">
+        <test-method signature="clickOnSlider()[pri:0, instance:PageObjClasses.Slider@306e95ec]" started-at="2023-09-20T10:18:10 IST" name="clickOnSlider" finished-at="2023-09-20T10:18:10 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnDatePicker -->
-        <test-method signature="selectDate()[pri:2, instance:PageObjClasses.DatePicker@6fd83fc1]" started-at="2023-08-10T17:15:24 IST" name="selectDate" finished-at="2023-08-10T17:15:24 IST" duration-ms="364" status="PASS">
+        </test-method> <!-- clickOnSlider -->
+        <test-method signature="moveTheSlider()[pri:1, instance:PageObjClasses.Slider@306e95ec]" started-at="2023-09-20T10:18:10 IST" name="moveTheSlider" finished-at="2023-09-20T10:18:10 IST" duration-ms="612" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectDate -->
-      </class> <!-- PageObjClasses.DatePicker -->
+        </test-method> <!-- moveTheSlider -->
+      </class> <!-- PageObjClasses.Slider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
