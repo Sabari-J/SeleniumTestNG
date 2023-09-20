@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.Slider">
+      <class name="PageObjClasses.ProgressBar">
         <methods>
-          <include name="clickOnSlider"/>
           <include name="getDriver"/>
+          <include name="verifyProgressBar"/>
         </methods>
-      </class> <!-- PageObjClasses.Slider -->
+      </class> <!-- PageObjClasses.ProgressBar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,7 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class base {
 	public static WebDriver driver;
-	JavascriptExecutor js = (JavascriptExecutor) driver;;
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	WebDriverWait wDrWait;
 
 	public void elementToBevisible(WebElement elemnt) {
@@ -34,6 +35,14 @@ public class base {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
+	}
+	
+	public void scrollToTop(WebElement element) {
+		js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
+//		js.executeScript("arguments[0].scrollIntoView();", element);
+		
+		
 	}
 
 	public void clickUsingJsExecutor(WebElement element) {
