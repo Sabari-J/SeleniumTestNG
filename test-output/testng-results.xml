@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T17:04:20 IST" name="Default suite" finished-at="2023-09-20T17:04:37 IST" duration-ms="16515">
+  <suite started-at="2023-09-25T11:11:55 IST" name="Default suite" finished-at="2023-09-25T11:12:04 IST" duration-ms="9407">
     <groups>
     </groups>
-    <test started-at="2023-09-20T17:04:20 IST" name="Default test" finished-at="2023-09-20T17:04:37 IST" duration-ms="16515">
+    <test started-at="2023-09-25T11:11:55 IST" name="Default test" finished-at="2023-09-25T11:12:04 IST" duration-ms="9407">
       <class name="PageObjClasses.ProgressBar">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-20T17:04:20 IST" name="getDriver" finished-at="2023-09-20T17:04:27 IST" duration-ms="6637" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-25T11:11:55 IST" name="getDriver" finished-at="2023-09-25T11:12:02 IST" duration-ms="7134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnProgressBarTab()[pri:0, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-20T17:04:27 IST" name="clickOnProgressBarTab" finished-at="2023-09-20T17:04:27 IST" duration-ms="161" status="PASS">
+        <test-method signature="clickOnProgressBarTab()[pri:0, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-25T11:12:02 IST" name="clickOnProgressBarTab" finished-at="2023-09-25T11:12:02 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnProgressBarTab -->
-        <test-method signature="verifyProgressBar()[pri:1, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-20T17:04:27 IST" name="verifyProgressBar" finished-at="2023-09-20T17:04:37 IST" duration-ms="9687" status="PASS">
+        <test-method signature="verifyProgressBar()[pri:1, instance:PageObjClasses.ProgressBar@4fb3ee4e]" started-at="2023-09-25T11:12:02 IST" name="verifyProgressBar" finished-at="2023-09-25T11:12:04 IST" duration-ms="2043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProgressBar -->

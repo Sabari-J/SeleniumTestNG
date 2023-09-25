@@ -24,7 +24,7 @@ public class ProgressBar extends base {
 	@Test(priority = 1)
 	public void verifyProgressBar() throws InterruptedException {
 
-		String requiredPercentage = "96";
+		String requiredPercentage = "19";
 		WebElement startButton = driver.findElement(By.xpath("//button[@id='startStopButton']"));
 		startButton.click();
 
@@ -33,7 +33,7 @@ public class ProgressBar extends base {
 		WebElement progressBar = driver.findElement(By.xpath("//div[@class='progress-bar bg-info']"));
 		scrollToTop(progressBar);
 
-		wbdrvrWait.pollingEvery(Duration.ofMillis(10));
+		wbdrvrWait.pollingEvery(Duration.ofMillis(1));
 		wbdrvrWait.until(ExpectedConditions.attributeToBe(progressBar, "aria-valuenow", requiredPercentage));
 
 		String progressbarValue = progressBar.getText();
