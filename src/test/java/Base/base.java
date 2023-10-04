@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -16,8 +17,21 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class base {
 	public static WebDriver driver;
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-	
+
 	WebDriverWait wDrWait;
+
+	@BeforeTest
+	public void getDriver() {
+
+		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().clearDriverCache().setup();
+		driver = new ChromeDriver();
+		System.out.println("Browser launched Successfully");
+		driver.get("https://demoqa.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+
+	}
 
 	public void elementToBevisible(WebElement elemnt) {
 		WebDriverWait wDrWait = new WebDriverWait(driver, 5);
@@ -36,13 +50,12 @@ public class base {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 	}
-	
+
 	public void scrollToTop(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, 0);");
 //		js.executeScript("arguments[0].scrollIntoView();", element);
-		
-		
+
 	}
 
 	public void clickUsingJsExecutor(WebElement element) {
@@ -69,23 +82,21 @@ public class base {
 
 	}
 
-	/*
-	 * // @AfterTest public void tearDown() throws InterruptedException {
-	 * Thread.sleep(2000); driver.close();
-	 * 
-	 * }
-	 */
-	
-	@BeforeTest
-	public void getDriver() {
+	public void hoverAndFetchToolTipText(String elementXpath, String tooltipTextXpath) {
+		WebElement hoverButton = driver.findElement(By.xpath(elementXpath));
+		scrollToElement(hoverButton);
+		highlightElement(hoverButton);
+		Actions actn = new Actions(driver);
+		actn.moveToElement(hoverButton).perform();
 
-		WebDriverManager.chromedriver().setup();
-//		WebDriverManager.chromedriver().clearDriverCache().setup();
-		driver = new ChromeDriver();
-		System.out.println("Browser launched Successfully");
-		driver.get("https://demoqa.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-
+		WebElement toolTipText = driver.findElement(By.xpath(tooltipTextXpath));
+		elementToBevisible(toolTipText);
+		String txt = toolTipText.getText();
+		System.out.println("Text fetched from the ToolTip: " + txt);
 	}
+
+	/**
+	 * @AfterTest public void tearDown() throws InterruptedException {
+	 *            Thread.sleep(2000); driver.close(); }
+	 **/
 }
