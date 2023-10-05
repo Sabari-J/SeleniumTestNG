@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-04T11:11:32 IST" name="Default suite" finished-at="2023-10-04T11:11:45 IST" duration-ms="12725">
+  <suite started-at="2023-10-05T10:56:06 IST" name="Default suite" finished-at="2023-10-05T10:56:20 IST" duration-ms="14157">
     <groups>
     </groups>
-    <test started-at="2023-10-04T11:11:32 IST" name="Default test" finished-at="2023-10-04T11:11:45 IST" duration-ms="12725">
+    <test started-at="2023-10-05T10:56:06 IST" name="Default test" finished-at="2023-10-05T10:56:20 IST" duration-ms="14157">
       <class name="PageObjClasses.Menu">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Menu@4fb3ee4e]" started-at="2023-10-04T11:11:32 IST" name="getDriver" finished-at="2023-10-04T11:11:45 IST" duration-ms="12560" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Menu@5d7148e2]" started-at="2023-10-05T10:56:06 IST" name="getDriver" finished-at="2023-10-05T10:56:19 IST" duration-ms="13445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnMenuOption()[pri:0, instance:PageObjClasses.Menu@4fb3ee4e]" started-at="2023-10-04T11:11:45 IST" name="clickOnMenuOption" finished-at="2023-10-04T11:11:45 IST" duration-ms="138" status="PASS">
+        <test-method signature="clickOnMenuOption()[pri:0, instance:PageObjClasses.Menu@5d7148e2]" started-at="2023-10-05T10:56:19 IST" name="clickOnMenuOption" finished-at="2023-10-05T10:56:19 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnMenuOption -->
+        <test-method signature="selectTheMenu()[pri:1, instance:PageObjClasses.Menu@5d7148e2]" started-at="2023-10-05T10:56:19 IST" name="selectTheMenu" finished-at="2023-10-05T10:56:20 IST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTheMenu -->
       </class> <!-- PageObjClasses.Menu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
