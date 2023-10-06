@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,10 +23,12 @@ public class base {
 
 	@BeforeTest
 	public void getDriver() {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--window-position=1920,0");
 
 		WebDriverManager.chromedriver().setup();
 //		WebDriverManager.chromedriver().clearDriverCache().setup();
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		System.out.println("Browser launched Successfully");
 		driver.get("https://demoqa.com/");
 		driver.manage().window().maximize();

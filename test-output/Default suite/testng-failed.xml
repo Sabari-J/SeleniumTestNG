@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.Menu">
+      <class name="PageObjClasses.SelectMenu">
         <methods>
+          <include name="selectValueDropdown"/>
           <include name="getDriver"/>
-          <include name="selectTheMenu"/>
+          <include name="selectMenuTab"/>
         </methods>
-      </class> <!-- PageObjClasses.Menu -->
+      </class> <!-- PageObjClasses.SelectMenu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
