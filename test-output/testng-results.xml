@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-06T11:41:43 IST" name="Default suite" finished-at="2023-10-06T11:41:52 IST" duration-ms="8648">
+  <suite started-at="2023-10-17T10:59:37 IST" name="Default suite" finished-at="2023-10-17T10:59:45 IST" duration-ms="7937">
     <groups>
     </groups>
-    <test started-at="2023-10-06T11:41:43 IST" name="Default test" finished-at="2023-10-06T11:41:52 IST" duration-ms="8648">
+    <test started-at="2023-10-17T10:59:37 IST" name="Default test" finished-at="2023-10-17T10:59:45 IST" duration-ms="7937">
       <class name="PageObjClasses.SelectMenu">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.SelectMenu@25fb8912]" started-at="2023-10-06T11:41:43 IST" name="getDriver" finished-at="2023-10-06T11:41:51 IST" duration-ms="8149" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:37 IST" name="getDriver" finished-at="2023-10-17T10:59:44 IST" duration-ms="7159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="selectMenuTab()[pri:0, instance:PageObjClasses.SelectMenu@25fb8912]" started-at="2023-10-06T11:41:51 IST" name="selectMenuTab" finished-at="2023-10-06T11:41:51 IST" duration-ms="223" status="PASS">
+        <test-method signature="selectMenuTab()[pri:0, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:44 IST" name="selectMenuTab" finished-at="2023-10-17T10:59:44 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMenuTab -->
-        <test-method signature="selectValueDropdown()[pri:1, instance:PageObjClasses.SelectMenu@25fb8912]" started-at="2023-10-06T11:41:51 IST" name="selectValueDropdown" finished-at="2023-10-06T11:41:51 IST" duration-ms="112" status="PASS">
+        <test-method signature="selectValueDropdown()[pri:1, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:44 IST" name="selectValueDropdown" finished-at="2023-10-17T10:59:44 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectValueDropdown -->
-        <test-method signature="selectOneDropDown()[pri:2, instance:PageObjClasses.SelectMenu@25fb8912]" started-at="2023-10-06T11:41:51 IST" name="selectOneDropDown" finished-at="2023-10-06T11:41:52 IST" duration-ms="127" status="PASS">
+        <test-method signature="selectOneDropDown()[pri:2, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:44 IST" name="selectOneDropDown" finished-at="2023-10-17T10:59:44 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectOneDropDown -->
+        <test-method signature="selectOldStyle()[pri:3, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:44 IST" name="selectOldStyle" finished-at="2023-10-17T10:59:44 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOldStyle -->
+        <test-method signature="clickMultiselectdropdown()[pri:4, instance:PageObjClasses.SelectMenu@2c35e847]" started-at="2023-10-17T10:59:44 IST" name="clickMultiselectdropdown" finished-at="2023-10-17T10:59:45 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickMultiselectdropdown -->
       </class> <!-- PageObjClasses.SelectMenu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

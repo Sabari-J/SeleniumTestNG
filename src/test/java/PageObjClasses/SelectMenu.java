@@ -1,5 +1,9 @@
 package PageObjClasses;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -24,6 +28,7 @@ public class SelectMenu extends base {
 		String dropDownValue = "Group 2, option 1";
 
 		WebElement groupDropdown = driver.findElement(By.xpath("//div[@id='withOptGroup']"));
+		scrollToElement(groupDropdown);
 		groupDropdown.click();
 
 		WebElement option = driver.findElement(By.xpath("//div[text()='" + dropDownValue + "']"));
@@ -32,11 +37,42 @@ public class SelectMenu extends base {
 
 	@Test(priority = 2)
 	public void selectOneDropDown() {
-		String salutation = "Dr.";
+		String salutation = "Prof.";
 		WebElement selectOneDropDown = driver.findElement(By.xpath("//div[@id='selectOne']"));
+		scrollToElement(selectOneDropDown);
 		selectOneDropDown.click();
 
 		WebElement option = driver.findElement(By.xpath("//div[text()='" + salutation + "']"));
-		option.click();
+		elementToBevisible(option);
+		clickUsingJsExecutor(option);
+
 	}
+
+	@Test(priority = 3)
+	public void selectOldStyle() {
+		String colour = "Yellow";
+		WebElement oldStyleMenu = driver.findElement(By.xpath("//select[@id='oldSelectMenu']"));
+
+		Select selct = new Select(oldStyleMenu);
+		selct.selectByVisibleText(colour);
+	}
+
+	@Test(priority = 4)
+	public void clickMultiselectdropdown() throws AWTException {
+		String color[] = { "Red", "Green", "Blue" };
+
+		WebElement multiselectdropdown = driver.findElement(By.xpath("//p[.='Multiselect drop down']/following::div[@class=' css-2b097c-container']"));
+		multiselectdropdown.click();
+
+		for (String colour : color) {
+			WebElement selectColor = driver.findElement(By.xpath("//div[text()='" + colour + "']"));
+
+			selectColor.click();
+		}
+
+		WebElement multiselectTitle = driver.findElement(By.xpath("//p[.='Multiselect drop down']"));
+		multiselectTitle.click();
+		System.out.println("Selected the required options under - " + multiselectTitle.getText());
+	}
+
 }
