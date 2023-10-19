@@ -5,8 +5,8 @@
     <classes>
       <class name="PageObjClasses.SelectMenu">
         <methods>
+          <include name="selectCars"/>
           <include name="getDriver"/>
-          <include name="clickMultiselectdropdown"/>
         </methods>
       </class> <!-- PageObjClasses.SelectMenu -->
     </classes>

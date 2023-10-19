@@ -61,7 +61,8 @@ public class SelectMenu extends base {
 	public void clickMultiselectdropdown() throws AWTException {
 		String color[] = { "Red", "Green", "Blue" };
 
-		WebElement multiselectdropdown = driver.findElement(By.xpath("//p[.='Multiselect drop down']/following::div[@class=' css-2b097c-container']"));
+		WebElement multiselectdropdown = driver
+				.findElement(By.xpath("//p[.='Multiselect drop down']/following::div[@class=' css-2b097c-container']"));
 		multiselectdropdown.click();
 
 		for (String colour : color) {
@@ -73,6 +74,21 @@ public class SelectMenu extends base {
 		WebElement multiselectTitle = driver.findElement(By.xpath("//p[.='Multiselect drop down']"));
 		multiselectTitle.click();
 		System.out.println("Selected the required options under - " + multiselectTitle.getText());
+	}
+
+	@Test(priority = 5)
+	public void selectCars() throws AWTException {
+		String[] carBrands = { "Saab", "Volvo", "Audi" };
+
+		WebElement cars = driver.findElement(By.xpath("//select[@id='cars']"));
+		Select slt = new Select(cars);
+		Robot rbt = new Robot();
+		rbt.keyPress(KeyEvent.VK_CONTROL);
+		for (String car : carBrands) {
+			slt.selectByVisibleText(car);
+			System.out.println( car + " - Car has been selected");
+		}
+		rbt.keyRelease(KeyEvent.VK_CONTROL);
 	}
 
 }
