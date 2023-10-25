@@ -7,8 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -23,12 +23,13 @@ public class base {
 
 	@BeforeTest
 	public void getDriver() {
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--window-position=1920,0");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--window-position=1920,0");
 
 		WebDriverManager.chromedriver().setup();
 //		WebDriverManager.chromedriver().clearDriverCache().setup();
-		driver = new ChromeDriver(options);
+//		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		System.out.println("Browser launched Successfully");
 		driver.get("https://demoqa.com/");
 		driver.manage().window().maximize();
@@ -83,6 +84,16 @@ public class base {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value = arguments[1]", ele, txtData);
 
+	}
+	
+	public void waitForSeconds(int seconds) {
+		long startTime = System.currentTimeMillis();
+		long endTime = startTime + (seconds * 1000);
+
+		while (startTime < endTime) {
+			// Do nothing, just wait
+			startTime = System.currentTimeMillis();
+		}
 	}
 
 	public void hoverAndFetchToolTipText(String elementXpath, String tooltipTextXpath) {

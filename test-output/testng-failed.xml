@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.SelectMenu">
+      <class name="PageObjClasses.Sortable">
         <methods>
-          <include name="selectCars"/>
+          <include name="clickOnSortable"/>
+          <include name="listSorting"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.SelectMenu -->
+      </class> <!-- PageObjClasses.Sortable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
