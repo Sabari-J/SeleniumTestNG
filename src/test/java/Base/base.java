@@ -7,8 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -62,6 +62,12 @@ public class base {
 
 	}
 
+	public void scrollupLittle(int pixelvalue) {
+		//to scroll up modify the pixel value of the second parameter to a negative value (-350) and to scroll down - positive(+ 350) .
+		js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(o, " + pixelvalue + ")", "");
+		
+	}
 	public void clickUsingJsExecutor(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
