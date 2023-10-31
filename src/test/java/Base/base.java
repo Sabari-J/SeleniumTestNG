@@ -54,6 +54,12 @@ public class base {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 	}
+	public void scrollupLittle(int pixelvalue) {
+		// to scroll up modify the pixel value of the second parameter to a negative value (-350) and to scroll down - positive(+ 350) .
+		js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, " + pixelvalue + ")", "");
+		
+	}
 
 	public void scrollToTop(WebElement element) {
 		js = (JavascriptExecutor) driver;
@@ -62,12 +68,12 @@ public class base {
 
 	}
 
-	public void scrollupLittle(int pixelvalue) {
-		//to scroll up modify the pixel value of the second parameter to a negative value (-350) and to scroll down - positive(+ 350) .
+	public void scrollToDown(WebElement element) {
 		js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(o, " + pixelvalue + ")", "");
-		
+		js.executeScript("arguments[0].scrollIntoView(false);", element);
+
 	}
+	
 	public void clickUsingJsExecutor(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
