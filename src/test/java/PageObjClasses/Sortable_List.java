@@ -29,9 +29,9 @@ public class Sortable_List extends base {
 	@Test(priority = 2)
 	public void listSorting() throws AWTException {
 		String[] sort = { "Three", "Five" };
-
 		Actions actns = new Actions(driver);
-		for (String listSorter : sort) {
+
+			for (String listSorter : sort) {
 			WebElement sortableElement = driver.findElement(By.xpath("//div[.='" + listSorter + "']"));
 			WebElement firstItem = driver.findElement(By.xpath("//div[@class='list-group-item list-group-item-action'][1]"));
 			scrollToElement(firstItem);

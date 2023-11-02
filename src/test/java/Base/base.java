@@ -18,6 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class base {
 	public static WebDriver driver;
 	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 
 	WebDriverWait wDrWait;
 

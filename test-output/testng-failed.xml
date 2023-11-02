@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.Sortable_Grid">
+      <class name="PageObjClasses.Selectable_list">
         <methods>
-          <include name="clickOnInteractions"/>
-          <include name="listSorting"/>
+          <include name="selectOptions"/>
+          <include name="clickOnSelectable"/>
           <include name="getDriver"/>
-          <include name="clickOnSortable_Grid"/>
         </methods>
-      </class> <!-- PageObjClasses.Sortable_Grid -->
+      </class> <!-- PageObjClasses.Selectable_list -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

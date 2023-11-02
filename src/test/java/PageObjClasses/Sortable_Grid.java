@@ -33,9 +33,10 @@ public class Sortable_Grid extends base {
 	@Test(priority = 2)
 	public void listSorting() throws AWTException {
 		String[] sort = { "Three", "Six" };
+		Actions actns = new Actions(driver);
 		int scrollValue = -200;
 		
-		Actions actns = new Actions(driver);
+		
 		for (String gridSorter : sort) {
 			WebElement sortableElement = driver.findElement(By.xpath("//div[@class='vertical-list-container mt-4']/following::div[.='" + gridSorter + "']"));
 			WebElement firstItem = driver.findElement(By.xpath("//div[@class='create-grid']/child::div[1]"));
