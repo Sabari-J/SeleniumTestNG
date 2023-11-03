@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.Selectable_list">
+      <class name="PageObjClasses.SelectableGrid">
         <methods>
           <include name="selectOptions"/>
-          <include name="clickOnSelectable"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.Selectable_list -->
+      </class> <!-- PageObjClasses.SelectableGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
