@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-03T13:35:54 IST" name="Default suite" finished-at="2023-11-03T13:36:29 IST" duration-ms="35081">
+  <suite started-at="2023-11-10T12:34:27 IST" name="Default suite" finished-at="2023-11-10T12:34:43 IST" duration-ms="15371">
     <groups>
     </groups>
-    <test started-at="2023-11-03T13:35:54 IST" name="Default test" finished-at="2023-11-03T13:36:29 IST" duration-ms="35081">
-      <class name="PageObjClasses.SelectableGrid">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.SelectableGrid@7bd4937b]" started-at="2023-11-03T13:35:54 IST" name="getDriver" finished-at="2023-11-03T13:36:23 IST" duration-ms="28653" status="PASS">
+    <test started-at="2023-11-10T12:34:27 IST" name="Default test" finished-at="2023-11-10T12:34:43 IST" duration-ms="15371">
+      <class name="PageObjClasses.Resizable">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Resizable@2c35e847]" started-at="2023-11-10T12:34:27 IST" name="getDriver" finished-at="2023-11-10T12:34:42 IST" duration-ms="15083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnGrid()[pri:0, instance:PageObjClasses.SelectableGrid@7bd4937b]" started-at="2023-11-03T13:36:23 IST" name="clickOnGrid" finished-at="2023-11-03T13:36:23 IST" duration-ms="241" status="PASS">
+        <test-method signature="clickOnResizable()[pri:0, instance:PageObjClasses.Resizable@2c35e847]" started-at="2023-11-10T12:34:42 IST" name="clickOnResizable" finished-at="2023-11-10T12:34:43 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnGrid -->
-        <test-method signature="selectOptions()[pri:1, instance:PageObjClasses.SelectableGrid@7bd4937b]" started-at="2023-11-03T13:36:23 IST" name="selectOptions" finished-at="2023-11-03T13:36:29 IST" duration-ms="6157" status="PASS">
+        </test-method> <!-- clickOnResizable -->
+        <test-method signature="resizeInnerWindow()[pri:1, instance:PageObjClasses.Resizable@2c35e847]" started-at="2023-11-10T12:34:43 IST" name="resizeInnerWindow" finished-at="2023-11-10T12:34:43 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectOptions -->
-      </class> <!-- PageObjClasses.SelectableGrid -->
+        </test-method> <!-- resizeInnerWindow -->
+      </class> <!-- PageObjClasses.Resizable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
