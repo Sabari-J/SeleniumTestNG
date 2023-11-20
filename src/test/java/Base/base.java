@@ -55,7 +55,7 @@ public class base {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 	}
-	public void scrollupLittle(int pixelvalue) {
+	public void scrollup_DownLittle(int pixelvalue) {
 		// to scroll up modify the pixel value of the second parameter to a negative value (-350) and to scroll down - positive(+ 350) .
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, " + pixelvalue + ")", "");

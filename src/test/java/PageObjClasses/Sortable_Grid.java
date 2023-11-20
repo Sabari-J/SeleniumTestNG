@@ -40,7 +40,7 @@ public class Sortable_Grid extends base {
 		for (String gridSorter : sort) {
 			WebElement sortableElement = driver.findElement(By.xpath("//div[@class='vertical-list-container mt-4']/following::div[.='" + gridSorter + "']"));
 			WebElement firstItem = driver.findElement(By.xpath("//div[@class='create-grid']/child::div[1]"));
-			scrollupLittle(scrollValue);
+			scrollup_DownLittle(scrollValue);
 			waitForSeconds(1);
 			actns.dragAndDrop(sortableElement, firstItem).perform();
 			System.out.println("Placed the item: " + gridSorter);

@@ -26,7 +26,7 @@ public class Selectable_list extends base {
 		int scrollValue = -200;
 		for (String options : selectItems) {
 			WebElement optns = driver.findElement(By.xpath("//li[.='" + options + "']"));
-			scrollupLittle(scrollValue);
+			scrollup_DownLittle(scrollValue);
 			waitForSeconds(1);
 			optns.click();
 			System.out.println("Successfully selected \"" + optns.getText() + "\" option.");

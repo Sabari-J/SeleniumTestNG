@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.SelectableGrid">
+      <class name="PageObjClasses.Resizable">
         <methods>
-          <include name="selectOptions"/>
+          <include name="resizeWindow"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.SelectableGrid -->
+      </class> <!-- PageObjClasses.Resizable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

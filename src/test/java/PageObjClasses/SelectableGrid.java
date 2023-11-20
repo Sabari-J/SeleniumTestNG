@@ -29,7 +29,7 @@ public class SelectableGrid extends base {
 
 		for (String optn : Options) {
 			WebElement selectableOptions = driver.findElement(By.xpath("//li[.='" + optn + "']"));
-			scrollupLittle(secs);
+			scrollup_DownLittle(secs);
 			waitForSeconds(2);
 			selectableOptions.click();
 			System.out.println("Clicked on " + selectableOptions.getText());
