@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjClasses.Resizable">
+      <class name="PageObjClasses.Droppable">
         <methods>
-          <include name="resizeWindow"/>
+          <include name="dragUnderSimpleTab"/>
           <include name="getDriver"/>
         </methods>
-      </class> <!-- PageObjClasses.Resizable -->
+      </class> <!-- PageObjClasses.Droppable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T11:59:48 IST" name="Default suite" finished-at="2023-11-20T12:00:01 IST" duration-ms="13254">
+  <suite started-at="2023-11-29T18:50:01 IST" name="Default suite" finished-at="2023-11-29T18:50:15 IST" duration-ms="13110">
     <groups>
     </groups>
-    <test started-at="2023-11-20T11:59:48 IST" name="Default test" finished-at="2023-11-20T12:00:01 IST" duration-ms="13254">
-      <class name="PageObjClasses.Resizable">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Resizable@7bd4937b]" started-at="2023-11-20T11:59:48 IST" name="getDriver" finished-at="2023-11-20T12:00:00 IST" duration-ms="12086" status="PASS">
+    <test started-at="2023-11-29T18:50:01 IST" name="Default test" finished-at="2023-11-29T18:50:15 IST" duration-ms="13110">
+      <class name="PageObjClasses.Droppable">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjClasses.Droppable@2c35e847]" started-at="2023-11-29T18:50:01 IST" name="getDriver" finished-at="2023-11-29T18:50:13 IST" duration-ms="11563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="clickOnResizable()[pri:0, instance:PageObjClasses.Resizable@7bd4937b]" started-at="2023-11-20T12:00:00 IST" name="clickOnResizable" finished-at="2023-11-20T12:00:00 IST" duration-ms="198" status="PASS">
+        <test-method signature="clickOnDroppable()[pri:0, instance:PageObjClasses.Droppable@2c35e847]" started-at="2023-11-29T18:50:13 IST" name="clickOnDroppable" finished-at="2023-11-29T18:50:13 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnResizable -->
-        <test-method signature="resizeInnerWindow()[pri:1, instance:PageObjClasses.Resizable@7bd4937b]" started-at="2023-11-20T12:00:00 IST" name="resizeInnerWindow" finished-at="2023-11-20T12:00:00 IST" duration-ms="487" status="PASS">
+        </test-method> <!-- clickOnDroppable -->
+        <test-method signature="dragUnderSimpleTab()[pri:1, instance:PageObjClasses.Droppable@2c35e847]" started-at="2023-11-29T18:50:13 IST" name="dragUnderSimpleTab" finished-at="2023-11-29T18:50:15 IST" duration-ms="1310" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resizeInnerWindow -->
-        <test-method signature="resizeWindow()[pri:2, instance:PageObjClasses.Resizable@7bd4937b]" started-at="2023-11-20T12:00:00 IST" name="resizeWindow" finished-at="2023-11-20T12:00:01 IST" duration-ms="418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resizeWindow -->
-      </class> <!-- PageObjClasses.Resizable -->
+        </test-method> <!-- dragUnderSimpleTab -->
+      </class> <!-- PageObjClasses.Droppable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
