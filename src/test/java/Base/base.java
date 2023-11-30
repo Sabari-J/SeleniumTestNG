@@ -18,7 +18,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class base {
 	public static WebDriver driver;
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-	
 
 	WebDriverWait wDrWait;
 
@@ -55,11 +54,13 @@ public class base {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 	}
+
 	public void scrollup_DownLittle(int pixelvalue) {
-		// to scroll up modify the pixel value of the second parameter to a negative value (-350) and to scroll down - positive(+ 350) .
+		// to scroll up modify the pixel value of the second parameter to a negative
+		// value (-350) and to scroll down - positive(+ 350) .
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, " + pixelvalue + ")", "");
-		
+
 	}
 
 	public void scrollToTop(WebElement element) {
@@ -74,7 +75,7 @@ public class base {
 		js.executeScript("arguments[0].scrollIntoView(false);", element);
 
 	}
-	
+
 	public void clickUsingJsExecutor(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
@@ -98,7 +99,7 @@ public class base {
 		js.executeScript("arguments[0].value = arguments[1]", ele, txtData);
 
 	}
-	
+
 	public void waitForSeconds(int seconds) {
 		long startTime = System.currentTimeMillis();
 		long endTime = startTime + (seconds * 1000);
@@ -120,6 +121,12 @@ public class base {
 		elementToBevisible(toolTipText);
 		String txt = toolTipText.getText();
 		System.out.println("Text fetched from the ToolTip: " + txt);
+	}
+
+	public void dragAndDropElement(WebElement source, WebElement destination) {
+		Actions actn = new Actions(driver);
+		waitForSeconds(1);
+		actn.dragAndDrop(source, destination).perform();
 	}
 
 	/**
