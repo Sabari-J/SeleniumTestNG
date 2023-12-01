@@ -37,10 +37,11 @@ public class Droppable extends base {
 		WebElement acceptTab = driver.findElement(By.xpath("//a[@id='droppableExample-tab-accept' and .='Accept']"));
 		acceptTab.click();
 		System.out.println("Successfully clicked on Accept Tab");
-		
-//		String option = "acceptable";
-		String option = "notacceptable";
-		WebElement dropHereBox = driver.findElement(By.xpath("//div[@id='acceptDropContainer']//child::p[.='Drop here']"));
+
+		 String option = "acceptable";
+		//String option = "notacceptable";
+		WebElement dropHereBox = driver
+				.findElement(By.xpath("//div[@id='acceptDropContainer']//child::p[.='Drop here']"));
 		if (option.equalsIgnoreCase("Acceptable")) {
 			WebElement optionToDrop = driver.findElement(By.id("acceptable"));
 			dragAndDropElement(optionToDrop, dropHereBox);
@@ -54,27 +55,56 @@ public class Droppable extends base {
 			System.out.println("Dropped the option successfully: " + optionToDrop.getText());
 		}
 	}
-	
+
 	@Test(priority = 3)
 	public void preventPropogationOptions() {
-		WebElement preventPropogation = driver.findElement(By.xpath("//a[@id='droppableExample-tab-preventPropogation' and .='Prevent Propogation']"));
+		WebElement preventPropogation = driver.findElement(
+				By.xpath("//a[@id='droppableExample-tab-preventPropogation' and .='Prevent Propogation']"));
 		preventPropogation.click();
 		System.out.println("Successfully clicked on prevent Propogation Tab");
-		
+
 		WebElement dragMeBox = driver.findElement(By.xpath("//div[@id='ppDropContainer']//child::div[@id='dragBox']"));
-		
-		//notGreedyDropBox
-		WebElement outerDroppableBox = driver.findElement(By.xpath("//div[@id='notGreedyDropBox']//child::p[.='Outer droppable']"));
-		
-		
-		//GreedyDropBox
-		WebElement outerDroppableBox2 = driver.findElement(By.xpath("//div[@id='greedyDropBox']//child::p[.='Outer droppable']"));
-		
-		dragAndDropElement(dragMeBox, outerDroppableBox2);
-		
-		
-		
+
+		String greedyOption = "not greedy";
+		//String greedyOption = "greedy";
+
+		// notGreedyDropBox
+		if (greedyOption.equalsIgnoreCase("not greedy")) {
+			//String option = "inner droppable"; - //div[@id='notGreedyInnerDropBox' and .='Inner droppable (not greedy)']
+			 String option = "outer droppable";
+
+			if (option.equalsIgnoreCase("outer droppable")) {
+				WebElement outerDroppableBox = driver
+						.findElement(By.xpath("//child::p[.='Outer droppable']"));
+				dragAndDropElement(dragMeBox, outerDroppableBox);
+				System.out.println("Dropped into the outer box Successfully ");
+
+			} else if (option.equalsIgnoreCase("inner droppable")) {
+				WebElement innerDroppableBox = driver.findElement(
+						By.xpath("//child::div[.='Inner droppable (not greedy)']"));
+				dragAndDropElement(dragMeBox, innerDroppableBox);
+				System.out.println("Dropped into the inner box Successfully");
+			}
+
+			// GreedyDropBox
+		} else if (greedyOption.equalsIgnoreCase("greedy")) {
+
+			 String option = "inner droppable";
+			 //String option = "outer droppable";
+			if (option.equalsIgnoreCase("outer droppable")) {
+				WebElement outerDroppableBox = driver
+						.findElement(By.xpath("//child::p[.='Outer droppable']"));
+				dragAndDropElement(dragMeBox, outerDroppableBox);
+				System.out.println("Dropped into the outer box Successfully");
+
+			} else if (option.equalsIgnoreCase("inner droppable")) {
+				WebElement innerDroppableBox = driver
+						.findElement(By.xpath("//child::div[.='Inner droppable (greedy)']"));
+				dragAndDropElement(dragMeBox, innerDroppableBox);
+				System.out.println("Dropped into the inner box Successfully");
+			}
+
+		}
+
 	}
-	
-	
 }
