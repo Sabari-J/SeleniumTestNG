@@ -1,0 +1,14 @@
+TestNG - Annotaions - Realtime Usecase
+
+Initializing Selenium Grid & DB connection...  (@BeforeSuite)
+Launching browser for the test...             (@BeforeTest)
+Navigating to the login page...               (@BeforeClass)
+Logging in before each test...                (@BeforeMethod)
+Verifying login functionality...              (@Test)
+Logging out after each test...                (@AfterMethod)
+Logging in before each test...                (@BeforeMethod)
+Verifying login functionality...              (@Test)
+Logging out after each test...                (@AfterMethod)
+Closing browser after all test cases...       (@AfterClass)
+Generating test report...                     (@AfterTest)
+Stopping Selenium Grid & closing DB connection... (@AfterSuite)
