@@ -1,11 +1,7 @@
 package PageObjClasses;
 
-import java.util.List;
-import javax.xml.transform.Templates;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import Base.base;
@@ -19,7 +15,7 @@ public class Textbox extends base {
 
 		elemnts.clickOnElements();
 
-		WebElement checkBox = driver.findElement(By.xpath("//span[.='Check Box' and  @class=\"text\"]"));
+		WebElement checkBox = driver.findElement(By.xpath("//span[.='Check Box' and  @class='text']"));
 		checkBox.click();
 		System.out.println("Clicked on checkBox Tab");
 	}
@@ -27,15 +23,18 @@ public class Textbox extends base {
 	@Test(priority = 1)
 	public void clickOnHomeExpandArrow() throws InterruptedException {
 
-		// *******Dealing with SVG elements******
+		// *******Dealing with SVG elements****** In xpath =>local-name()='svg'
 
 		WebElement expandHomeArrow = driver
-				.findElement(By.xpath("//*[local-name()='svg' and @class='rct-icon rct-icon-expand-close']"));
+				// .findElement(By.xpath("//*[local-name()='svg' and @class='rct-icon
+				// rct-icon-expand-close']"));
+				.findElement(By.xpath("//button[@class='rct-collapse rct-collapse-btn']"));
 		System.out.println("++++++");
 		expandHomeArrow.click();
 		System.out.println("Clicked on Home Arrow");
 
-		// Actions a = new Actions(driver); a.moveToElement(expandArrow).
+		// Actions a = new Actions(driver);
+		// a.moveToElement(expandArrow).
 		// click().build().perform();
 
 	}
@@ -195,5 +194,4 @@ public class Textbox extends base {
 		System.out.println(selection);
 
 	}
-
 }
