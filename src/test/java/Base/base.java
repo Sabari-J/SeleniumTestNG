@@ -130,7 +130,8 @@ public class base {
 	}
 
 	/**
-	 * @AfterTest public void tearDown() throws InterruptedException {
+	 * @AfterTest 
+	 * public void tearDown() throws InterruptedException {
 	 *            Thread.sleep(2000); driver.close(); }
 	 **/
 }
